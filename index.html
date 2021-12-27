@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="assets/win95.css" />
+    <link rel="stylesheet" href="style-original.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Desktop Icon Section -->
+
+        <div class="row">
+            <div class="ui-desktop">
+                <div class="recycle-bin ui-icon" data-toggle="modal" data-target="#recycleModal">
+                    <div class="ui-icon-container" a href="#" data-toggle="modal" data-target="#recycleModal">
+                        <img src="assets/icons/recycle_bin_empty_cool-3.png">
+                        <span style="color:white;">Recycle Bin</span>
+                    </div>
+                </div>
+                <div class="laptop-icon ui-icon" data-toggle="modal" data-target="#codeModal">
+                    <div class="ui-icon-container">
+                        <img src="assets/icons/globe_map-0.png">
+                        <span style="color:white;">Learn to Code!</span>
+                    </div>
+                </div>
+                <div class="help-book ui-icon" data-toggle="modal" data-target="#pledgeModal">
+                    <div class="ui-icon-container">
+                        <img src="assets/icons/help_book_cool-3.png">
+                        <span style="color:white;">Pledge</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Windows -->
+
+        <!-- Recycle Modal -->
+        <div class="modal fade test-modal" id="recycleModal" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Recycling Game</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h5>GIRL SCOUTING AT HOME: REDUCE, REUSE, RECYCLE, COMPOST – RELAY!!!</h5>
+                        <img class="code-resouce-image" src="assets/recyclegif.gif">
+                        <br>
+                        <p>Share the fun of Girl Scout Camp with your family! Girl Scouts of Colorado Camp Staff has
+                            developed a series of activities you can do with your family at home. Or, you can even share
+                            them with your Girl Scout sisters virtually. This game is a great way to learn about
+                            reducing waste as well as having a silly competition with your loved ones!</p>
+
+                        <b>Materials:</b>
+                        <br>
+                        <ul>
+                            <li>Eight Containers</li>
+                            <li>Lots of examples of materials you can reduce, reuse, recycle or compost. These can be
+                                things found around the house, items from the garbage or recycling, or just drawn
+                                pictures of these items!</li>
+                        </ul>
+
+                        <b>Game Set-Up:</b>
+                        <br>
+                        <ul>
+                            <li>Label two containers reduce, two reuse, two recycle, and two compost</li>
+                            <li>Each team will need one of each container</li>
+                            <li>Gather materials (or pictures of materials). Each team should have the same items</li>
+                        </ul>
+
+                        <b>Game Play:</b>
+                        <br>
+                        <ol>
+                            <li>Split the group into two teams. Each team has a starting line on one side of the room
+                                and their four containers are on the opposite side of the room.</li>
+                            <li>Each group has a pile of items that they must decide if they should reduce their use of,
+                                reuse, recycle, or compost.</li>
+                            <li>One member of each team at a time must take an item from their pile and run and put the
+                                item in the container they think it fits best in.</li>
+                            <li>The next player can’t pick up the next item until their teammate returns and tags their
+                                hand.</li>
+                            <li>This continues until one team has put all the items into their containers.</li>
+                            <li>The team that has the greatest number of items in the correct containers wins. Many
+                                items could fit in multiple locations so your team must give your reasons for why you
+                                put it where you did to get the points!</li>
+                            <li>To make the game more silly and challenging change the way the players get to the
+                                containers. They could skip, crab walk, bear walk, hop, etc.!</li>
+                        </ol>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coding Modal -->
+        <div class="modal fade test-modal" id="codeModal" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Places to Learn How to Code</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h5>Coding Resources</h5>
+                        <h6>If you want to make your own game, check out these sites when you get home! Don't forget
+                            your flyer!</h6>
+                        <br>
+                        <b>Scratch</b>
+                        <img class="code-resouce-image" src="assets/scratchscreen.png">
+                        <p>Scrach is a free program where you can program your own interactive stories, games, and
+                            animations. It is specifically designed for children between the ages of 8 to 16 but anyone
+                            can use it. </p>
+                        <b>Blockly</b>
+                        <img class="code-resouce-image" src="assets/blocklyscreen.png">
+                        <p>Blockly is another programming that represents coding concepts visually as interlocking
+                            blocks. You can create custom blocks for your own games and other app ideas. </p>
+                        <b>Code For Life</b>
+                        <img class="code-resouce-image" src="assets/codeforlifescreen.png">
+                        <p>Scrach is a free program where you can program your own interactive stories, games, and
+                            animations. It is specifically designed for children between the ages of 8 to 16 but anyone
+                            can use it. </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Girl Scout Pledge Modal -->
+        <div class="modal fade test-modal" id="pledgeModal" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Promise</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h5>Girl Scout Promise</h5>
+                        <img class="pledge-image" src="assets/onmyhonor.gif">
+                        <p>
+                            <br>
+                            <em>On my honor, I will try:</em>
+                            <br>
+                            &nbsp; &nbsp; To serve God* and my country,
+                            <br>
+                            &nbsp; &nbsp; And to live by the Girl Scout Law.
+                        </p>
+                        <p>*Members may substitute for the word God in accordance with their own spiritual beliefs.</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tic Tac Toe Game / Cookie Card -->
+        <div class="row">
+            <section>
+                <!-- Tic Tac Toe Rendering Section -->
+                <div class="game-container center-block">
+
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-normal">Tic Tac Toe Game</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="game--container">
+                                <div data-cell-index="0" class="cell"></div>
+                                <div data-cell-index="1" class="cell"></div>
+                                <div data-cell-index="2" class="cell"></div>
+                                <div data-cell-index="3" class="cell"></div>
+                                <div data-cell-index="4" class="cell"></div>
+                                <div data-cell-index="5" class="cell"></div>
+                                <div data-cell-index="6" class="cell"></div>
+                                <div data-cell-index="7" class="cell"></div>
+                                <div data-cell-index="8" class="cell"></div>
+                            </div>
+                            <h2 class="game--status"></h2>
+                            <button id ="restart-button" class="game--restart btn btn-lg btn-block btn-primary">Restart Game</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Tic Tac Toe Section -->
+
+                <div class="col-md-10 my-auto"></div>
+
+                <div class="col-lg-5 my-auto">
+        
+                    <!-- Terracon Steam Card Section -->
+                    <div class="card terracon-steam-card">
+                        <div class="card-header icon">
+                            <h4 class="my-0 font-weight-normal">
+                                <img src="assets/icons/note-0.png">Terracon Live at STEAM
+                            </h4>
+                        </div>
+                        <div class="card-body">
+                            <p>Terracon Partnered with the Girl Scouts of NE Kansas and NW Missouri and Science City to
+                                explore the world of science, technology, engineering, arts and mathematics (STEAM) through
+                                hands-on workshops for an in-person LIVE STEAM
+                            </p>
+                            <p>
+                                More than 200 local Girl Scouts (4th and 5th grades) came together to explore! Here is
+                                the result of the Information Technology (IT) workshop.
+                            </p>
+                                <img class ="code-resouce-image" src="assets/STEAMLogoTransparent.png">
+                        </div>
+                    </div>
+
+        <!-- Buy Cookies Window -->
+                    <div class="row">
+                        <div class="col-lg-12 my-auto">
+                            <div id="mydiv">
+                                <div class="card cookie-card">
+                                    <div id="mydivheader" class="card-header icon ">
+                                        <h4 class="my-0 font-weight-normal">BUY COOKIES NOW</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <img src="assets/icons/buycookies1.gif">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Cookies Window. Rest closing out other divs -->
+                </div>
+        </div>
+    
+    </div>
+    </section>
+</body>
+
+<!-- Footer -->
+<footer class="taskbar">
+    <div class="row" style="margin-right: 0px;">
+        <div class="col-8">
+            <a href="#" class="btn start-button"><img src="assets/icons/windows-0.png"
+                    class="icon-16">Start</a>
+            <a href="#" class="btn start-button"><img
+                    src="assets/icons/game_hearts.png" class="icon-16"> Tic-Tac-Toe</a>
+        </div>
+        <div class="col-4 time">Created by Terracon</div>
+    </div>
+
+</footer>
+
+<!-- Script Section -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+<!-- <script src ="js/jquery.min.js"></script>
+<script src ="js/popper.min.js"></script>
+<script src ="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src ="js/bootstrap.bundle.min.js"></script> -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

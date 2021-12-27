@@ -1,0 +1,178 @@
+/* Site Formatting */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    height: 100vh;
+    font-family: "MS Sans Serif",Tahoma,Verdana,Segoe,sans-serif;
+    color: #222222;
+    
+}
+section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 50px auto;
+    /* padding-bottom: 160px; */
+    
+}
+
+
+/* Desktop Section */
+
+/* Desktop Background */
+
+body {
+    background-color: #d784d7;
+}
+
+/* Desktop Icons */
+.ui-desktop {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 72px;
+    z-index: 9999;
+}
+
+.ui-icon-container {
+    position: relative;
+    margin: 10px auto;
+}
+
+.ui-icon {
+    font-size: 12px;
+    text-align: center;
+    vertical-align: top;
+    width: 72 px;
+    z-index: 0;
+    line-height: 12px;
+    margin: 0;
+    padding: 8px 1 px;
+}
+
+/* Tic Tac Toe Game */
+
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 306px;
+    margin: 50px auto;
+}
+
+.game-container {
+    position: fixed;
+    margin: 50px;
+}
+
+/* .game-window {
+    margin-right: 800px auto;
+} */
+
+.cell {
+    font-family: "Permanent Marker", cursive;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 1px #333333;
+    border: 1px solid #333333;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+}
+
+/* #restart-button{
+    font-family: "Pixelated MS Sans Serif", Arial;
+  } */
+
+
+/* Cards */
+
+.terracon-steam-card {
+    margin: 0 50px 0 50px;
+    font-size: 15px;
+}
+
+.cookie-card {
+    margin: 0 50px 40px 120px;
+    
+}
+
+/* Modals */
+
+#recycleModal {
+    overflow-y: auto;
+}
+
+/* Images */
+
+.code-resouce-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.pledge-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Draggable Element CSS Section */
+
+#mydiv {
+    position: absolute;
+    bottom: 20px;
+}
+
+#mydivheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+    color: #fff;
+}
+/* * {
+    outline: 1px solid red;
+   } */
+
+   footer {
+       position: fixed;
+       width: 100%;
+       bottom: 0;
+   }
+
+   /* Media Queries */
+
+   @media (-webkit-device-pixel-ratio: 1.50) {
+    * {
+      zoom: 0.98;
+    }
+    .code-resouce-image {
+        justify-content: center;
+        max-width: 50%;
+        height: auto;
+    }
+    .cookie-card{
+      display: none;
+    }
+    #recycleModal {
+        justify-content: center;
+    }
+
+  }
+
+   @media only screen and (max-width: 1026px) {
+    #mydiv {
+        display: none;
+    }
+    .terracon-steam-card{
+        display:none;
+    }
+  
+}
+/* @media (min-width: 1200px), (min-width: 960px) and (-webkit-device-pixel-ratio: 1.50) {
+   .cookie-card {
+       display:none;
+   }
+   .game-container{
+    margin: 0px;
+   }
+  } */
+
