@@ -40,6 +40,18 @@
                         <span style="color:white;">Pledge</span>
                     </div>
                 </div>
+                <div class="bloomtech-icon ui-icon" id= "bloomicon">
+                    <div class="ui-icon-container">
+                        <img src="assets/bloomlogoicon.png">
+                        <span style="color:white;">Bloomtech Institue</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div id = "results-api">
+             <!-- where our api results go -->
             </div>
         </div>
 
@@ -149,6 +161,8 @@
             </div>
         </div>
 
+     
+
         <!-- Girl Scout Pledge Modal -->
         <div class="modal fade test-modal" id="pledgeModal" tabindex="-1" role="dialog"
             aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -182,9 +196,111 @@
             </div>
         </div>
 
+        <div class="container container-load">
+            <div id="loading">
+                <!-- our loading icon -->
+            </div>
+
+        </div>
+
+        <div id="bloom-tech-form" class="container form-css">
+            <div class ="card mb-4">
+                <div class="card-header">
+                    <h4>Bloomtech Institute of Technology</h4>
+                </div>
+                <div class="card-body">
+                    <div class="container">
+                        <h3>Welcome to Bloomtech Institute of Technology</h3>
+                        <img class="bloomgif" src="assets/bloomtechgif.gif">
+                        <p>We started Bloom Institute of Technology because we believe that the “traditional” model of higher education is broken. Every year, people as young as 17 years old take on tens of thousands of dollars in student debt and pray that the education they’re investing in will land them on a job on the other side. At Bloomtech Instittue we train students remotely to become a softare engineer or data scientist without paying upfront! </p>
+
+                        <p>Here you will find a search database for our current learners</p>
+                        <form>
+                         
+                        <div class="input-group input-group-sm mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="inputGroup-sizing-sm">First Name</span>
+                            </div>
+                            <input id="first-Name" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                          </div>
+
+                          <div class="input-group input-group-sm mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="inputGroup-sizing-sm">Max Age</span>
+                            </div>
+                            <input class ="form-control form-items" id="user-age" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                          </div>
+    
+                        <select id="genders" class="form-select" aria-label="Gender Selection">
+                            <option class="form-items" selected>Gender</option>
+                            <option id="femalegen" value="female">Female</option>
+                            <option id="malegen" value="male">Male</option>
+                        </select>
+
+                        <button id ="submitBtn" type="submit" class="btn btn-primary" onclick="randomUsersAPI()">Submit</button>
+
+                        </form>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+   
+
+
+      
+        
+        <!-- Bloomtech Institute Modal -->
+        <!-- <div class="modal fade test-modal" id="bloomModal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Bloomtech Institute of Technology</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5>Student Database</h5>
+                     <img class="pledge-image" src="assets/onmyhonor.gif">
+                  <form>
+                    <div class="form-group row">
+                        <label for="inputEmail3" class = "col-sm-2 col-form-label">
+                            <img src = "assets/icons/envelope_closed-1.png" >Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div> 
+                      <div class="form-group row">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div> 
+                      <div class = "form-check">
+                        <label class = "form-check-label"value ="option1">Female</label>
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="" data-dashlane-rid="411e72b16eab0068" data-form-type="other">
+                      </div>
+                      <label for=" genderLabel">Gender</label>
+                      <input type="radio" aria-label="Radio button for following text input">
+                      <div class="form-group row">
+                          <label for=" genderLabel">Gender</label>
+                          <input type="radio" aria-label="Radio button for following text input">
+                          
+                      </div>
+                  
+                  </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
         <!-- Tic Tac Toe Game / Cookie Card -->
         <div class="row">
-            <section>
+            <section id = "main-windows-girlscout">
                 <!-- Tic Tac Toe Rendering Section -->
                 <div class="game-container center-block">
 
@@ -264,17 +380,25 @@
 <footer class="taskbar">
     <div class="row" style="margin-right: 0px;">
         <div class="col-8">
-            <a href="#" class="btn start-button"><img src="assets/icons/windows-0.png"
+            <a href="#" class="btn start-button" class = "dropdown-toggle"><img src="assets/icons/windows-0.png"
                     class="icon-16">Start</a>
-            <a href="#" class="btn start-button"><img
+            <a href="#" id="tictacicon" class="btn start-button"><img
                     src="assets/icons/game_hearts.png" class="icon-16"> Tic-Tac-Toe</a>
         </div>
-        <div class="col-4 time">Created by Terracon</div>
+        <div class="col-4 time">Created by Magdalene</div>
     </div>
 
 </footer>
 
 <!-- Script Section -->
+<script>
+function clearResults() {
+    resultsDiv.style.display= "none";
+    return;
+}
+
+
+</script>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -295,7 +419,9 @@
 <script src="js/bootstrap.bundle.js"></script>
 <script src ="js/bootstrap.bundle.min.js"></script> -->
 
-<script src="script.js"></script>
+<script src="game.js"></script>
+<script src="randomu.js"></script>
+<script src="form.js"></script>
 
 </body>
 

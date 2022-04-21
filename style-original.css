@@ -31,7 +31,7 @@ body {
     left: 0;
     top: 0;
     width: 72px;
-    z-index: 9999;
+    /* z-index: -1; */
 }
 
 .ui-icon-container {
@@ -43,11 +43,64 @@ body {
     font-size: 12px;
     text-align: center;
     vertical-align: top;
-    width: 72 px;
+    /* width: 72 px; */
     z-index: 0;
     line-height: 12px;
     margin: 0;
     padding: 8px 1 px;
+}
+
+/* Forms */
+.container-load{
+    position: absolute;
+    margin-top: 15%;
+}
+#loading {
+    width: 2rem;
+    height: 2rem;
+    border: 5px solid #f3f3fe;
+    border-top: 6px solid #9c41f2;
+    border-radius: 100%;
+    margin: auto;
+    visibility: hidden;
+    animation: spin 1s infinite linear;
+}
+
+#loading.display {
+    visibility: visible;
+
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.bloomgif {
+    max-width: 40%;
+}
+
+.form-css {
+    display: table;
+}
+
+.form-items {
+    vertical-align: top;
+    /* display: table-cell; */
+}
+
+#bloom-tech-form {
+    display: none;
+    text-align: center;
+    /* align-items: center; */
+}
+
+#submitBtn {
+    margin-top: 25px;
+
 }
 
 /* Tic Tac Toe Game */
@@ -119,6 +172,7 @@ body {
 #mydiv {
     position: absolute;
     bottom: 20px;
+    /* z-index: ; */
 }
 
 #mydivheader {
@@ -165,6 +219,10 @@ body {
     .terracon-steam-card{
         display:none;
     }
+    /* .container {
+        margin-left: 10%;
+    } */
+
   
 }
 /* @media (min-width: 1200px), (min-width: 960px) and (-webkit-device-pixel-ratio: 1.50) {
