@@ -24,7 +24,7 @@ function hideLoading() {
 
 bloomicon.addEventListener("click", function () {
     
-    bloomTechForm.style.display= "block"
+    bloomTechForm.style.display= "block";
     console.log("this worked");
 
     game.style.visibility= "hidden";
